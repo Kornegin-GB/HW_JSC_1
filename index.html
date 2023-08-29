@@ -33,6 +33,7 @@
       5. Выведите содержимое тега title в консоль.
       6. Получите элемент с классом "card-title" и выведите его родительский узел в консоль.
       7. Создайте тег p, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
+      8. Удалите тег h6 на странице.
       */
       console.log('Задание 1');
       const superLink = document.getElementById('super_link');
@@ -66,7 +67,10 @@
       paragraph.textContent = 'Привет';
       const card = document.querySelector('.card');
       card.prepend(paragraph);
-      
+
+      console.log('Задание 8');
+      const h6Element = document.querySelector('h6')
+      h6Element.remove();
    </script>
 </body>
 
